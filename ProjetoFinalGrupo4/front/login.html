@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+   <!--Chamada de uma biblioteca em CSS-->
+    <link rel="stylesheet" href="../front/css/formatacoes.css">
+
+    <!--Chamada da biblioteca JS-->
+    <script type="text/javascript" src="../front/js/usuario.js"></script>
+
+
+
+</head>
+
+
+<body>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-12">
+                <h1 style="text-align: center;">Dashboard de controle de fraude</h>
+            </div>
+        </div>
+
+
+        <div class="login-formitau">
+            <div align="center"><img src="../front/images/itau_logo.png"
+                    width="55%">
+            </div>
+            <div class="form-groupitau">
+                <input id="txtemail" type="text" class="form-control" placeholder="racf ou email" required>
+                <i class="fa fa-user"></i>
+            </div>
+            <div class="form-group log-status">
+                <input id="txtsenha" type="password" class="form-control" placeholder="Senha" required>
+                <i class="fa fa-lock"></i>
+            </div>
+            <br><br>
+            <span class="alert">Invalid Credentials</span>
+            <button onclick="logar()" type="button" class="log-btn">Login</button>
+            
+
+        </div>
+    </div>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"> </script>
+
+
+</body>
+
+</html>

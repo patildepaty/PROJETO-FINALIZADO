@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agente</title>
+
+    <!--Especificar de onde é o script que ele vai buscar as funcoes-->
+    <script type="text/javascript" src="js/agente.js"></script>
+    <script type="text/javascript" src="js/usuario.js"></script>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../front/css/formatacoes.css">
+
+</head>
+
+<body onload="getTransacoes()">
+
+    <table border="0" width="100%" class="menu">
+        <tr>
+            <th style="width:90%;"><a><img src="../front/images/itau_logo.png" width="8%"></a></th>
+            <th style="width:10%; text-align:center;"><button onclick="logout()" type="button"
+                    class="btn btn-primary">Logout</button> </th>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <div class="container" style="background-color:white;border-radius: 5%; width: 30%;">
+
+        <div class="col-12">
+
+                    <br>
+                    <div align="center" id="parceiro" style="font-weight: bold;font-size:xx-large;"></div> <br>
+
+                    <fieldset>
+                        <legend><b>Total</b></legend>
+                        <div class="divdash" id="total"></div>
+                    </fieldset> 
+                    <br>
+
+                    <fieldset>
+                        <legend><b>Sucesso</b></legend>
+                        <div class="divdash" id="sucesso"></div>
+                    </fieldset>
+                    <br>
+
+                    <fieldset>
+                        <legend><b>Falha</b></legend>
+                        <div class="divdash" id="falha"></div>
+                    </fieldset>
+                    <br>
+
+                    <fieldset>
+                        <legend><b>Fraude</b></legend>
+                        <div class="divdash" id="fraude"></div>
+                    </fieldset>
+                    <br>
+        </div>
+
+    </div>
+
+
+
+
+
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
